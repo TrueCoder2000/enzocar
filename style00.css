@@ -1,0 +1,457 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 3px black;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.div-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-logo p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin: 10px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.menu li a:hover {
+    border-bottom: 2px red solid;
+}
+
+.div-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/***********************************************************************************MAIN*****************************************************************/
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.div-all-forms-buttons {
+    width: 350px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.54);
+    position: relative;
+    top: 180px;
+    border-radius: 7px;
+}
+
+.div-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.div-buttons div {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.div-btn-login-js {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px
+}
+
+.div-forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-head-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-head-image img {
+    width: 100px;
+}
+
+.all-forms {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.all-forms form input {
+    height: 35px;
+    width: 220px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px gray solid;
+
+}
+
+.all-forms form input::placeholder {
+    font-weight: bold;
+}
+
+.all-forms form button {
+    width: 100%;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btnLogin {
+    background-color: #4CBB17;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+.btnSignup {
+    /*background-color: red;*/
+    background-color: #4CBB17;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+}
+
+.formLogin {
+    position: relative;
+}
+
+.formSignup {
+    position: absolute;
+    top: 218px;
+    display: none;
+}
+
+.link-login {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+/**********************************************************************DIV-HOMEPAGE**********************************************************************/
+
+.div-container-homepage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.div-background {
+    width: 100%;
+    height: 855px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-background {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    /*line-height: 20px;*/
+}
+
+.text-background p {
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 35px;
+}
+
+.text-background p b {
+    color: red;
+}
+
+.text-background a {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    width: auto;
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 2px black;
+    position: relative;
+    left: -128px;
+}
+
+.text-background a:hover {
+    background-color: black;
+    /*transform: scaleX(3);*/
+    transition: 1s;
+}
+
+.div-image-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-image-background img {
+    width: 100%;
+}
+
+.div-vehicules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-vehicules {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-vehicules h1 {
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    padding: 10px;
+}
+
+.div-vehicules-product {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.product-card {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transition: 300ms;
+    transform: scale(1.1);
+}
+
+
+.product-card img {
+    width: 80%;
+    height: 150px;
+    display: block;
+    margin: 5px;
+
+}
+
+.div-price {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: red;
+}
+
+.div-price input {
+    width: 140px;
+}
+
+/*.div-price p {
+    margin: 5px;
+}*/
+
+.btnPrice {
+    width: 80%;
+    color: white;
+    background-color: red;
+    border: none;
+    font-size: 17px;
+    padding: 7px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px black;
+}
+
+
+/************************************************************************************DIV-CONTACT******************************************************************/
+
+.div-contact {
+    width: 100%;
+    display: block;
+}
+
+.div-map-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.map {
+    width: 500px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 3px lightgray;
+    margin-right: 50px;
+}
+
+.map p {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.map iframe {
+    width: 100%;
+}
+
+.message {
+    width: 500px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 2px lightgray;
+}
+
+.message p {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.message form {
+    width: 100%;
+    height: 420px;
+}
+
+.message form input {
+    width: 100%;
+    height: 35px;
+    border: 1px lightgray solid;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding: 15px;
+    outline: none;
+}
+
+.message form textarea {
+    width: 100%;
+    height: 250px;
+    border: 1px lightgray solid;
+    resize: none;
+    outline: none;
+
+}
+
+.message form button {
+    width: 100%;
+    padding: 15px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 4px;
+}
+
+/******************************************************************FOOTER***********************************************************/
+
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0px 0px 3px black;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+footer .menu {}
+
+footer .menu-footer {
+    display: flex;
+}
+
+footer .menu-footer li {
+    margin: 10px;
+    list-style: none;
+}
+
+footer .menu-footer li a {
+    text-decoration: none;
+    color: white;
+}
